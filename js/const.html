@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javasciprt const</h2>
+    <p>you can not reassign a const obj</p>
+    <p id="demo"></p>
+    <script>
+        try{
+            const car = {type:"flat", model:"500", color:"white"};
+            car = {type:"Volvo", model:"EX60", color:"red"};
+
+        }
+        catch(err){
+            document.getElementById("demo").innerHTML=err;
+        }
+    </script>
+    
+</body>
+</html>

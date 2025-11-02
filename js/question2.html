@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+</head>
+<body>
+    <h1>JavaScript Employee Class Example</h1>
+    <div id="demo"></div>
+
+    <script>
+        class Employee {
+            constructor(name, salary, position) {
+                this.name = name;
+                this.salary = salary;
+                this.position = position;
+            }
+
+            getAnnualSalary() {
+                return this.salary * 12;
+            }
+
+            getPromotion() {
+                return this.getAnnualSalary() * 0.1;
+            }
+
+            showDetails() {
+                let details = "";
+                details += "Name: " + this.name + "<br>";
+                details += "Position: " + this.position + "<br>";
+                details += "Monthly Salary: ₹" + this.salary + "<br>";
+                details += "Annual Salary: ₹" + this.getAnnualSalary() + "<br>";
+                details += "Promotion Bonus: ₹" + this.getPromotion() + "<br>";
+                return details;
+            }
+        }
+
+        const emp1 = new Employee("Kumar Ayush", 30000, "Software Developer");
+
+        document.getElementById("demo").innerHTML = emp1.showDetails();
+    </script>
+</body>
+</html>

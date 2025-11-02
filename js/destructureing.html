@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring</title>
+</head>
+<body>
+    <h1>JS Array</h1>
+    <h2>Array Destructuring Example</h2>
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        
+        // Destructuring the array
+        let [fruit1, fruit2] = fruits;
+
+        // Displaying result
+        document.getElementById("demo").innerHTML = 
+            "All fruits: " + fruits.join(", ") + "<br>" +
+            "First fruit: " + fruit1 + "<br>" +
+            "Second fruit: " + fruit2;
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator Example</title>
+</head>
+<body>
+    <h1>Rest Operator in JavaScript</h1>
+    <p id="demo"></p>
+
+    <script>
+        // Example 1: Using rest operator in a function
+        function sum(...numbers) {
+            // 'numbers' becomes an array of all passed arguments
+            let total = 0;
+            for (let num of numbers) {
+                total += num;
+            }
+            return total;
+        }
+
+        // Example 2: Array destructuring with rest
+        const fruits = ["apple", "banana", "mango", "orange"];
+        const [first, second, ...others] = fruits;
+
+        // Show results
+        document.getElementById("demo").innerHTML =
+        "Sum: " + sum(10, 20, 30, 40) + "<br>" +
+        "First fruit: " + first + "<br>" +
+        "Second fruit: " + second + "<br>" +
+        "Other fruits: " + others.join(", ");
+    </script>
+</body>
+</html>

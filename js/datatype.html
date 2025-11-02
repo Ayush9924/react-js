@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types</title>
+</head>
+<body>
+    <h2>JavaScript Data Types Example</h2>
+
+    <script>
+        let num = 25;
+        document.write("Number: " + num + " (" + typeof num + ")<br>");
+
+        let str = "Hello, World!";
+        document.write("String: " + str + " (" + typeof str + ")<br>");
+
+        let isTrue = true;
+        document.write("Boolean: " + isTrue + " (" + typeof isTrue + ")<br>");
+
+        let undef;
+        document.write("Undefined: " + undef + " (" + typeof undef + ")<br>");
+
+        let n = null;
+        document.write("Null: " + n + " (" + typeof n + ")<br>");
+
+        let person = { name: "Ayush", age: 21 };
+        document.write("Object: " + JSON.stringify(person) + " (" + typeof person + ")<br>");
+
+        let arr = [1, 2, 3, 4];
+        document.write("Array: " + arr + " (" + typeof arr + ")<br>");
+
+        function greet() { return "Hello!"; }
+        document.write("Function: " + greet() + " (" + typeof greet + ")<br>");
+
+        let bigNum = 1234567890123456789012345678901234567890n;
+        document.write("BigInt: " + bigNum + " (" + typeof bigNum + ")<br>");
+
+        let sym = Symbol("id");
+        document.write("Symbol: " + sym.toString() + " (" + typeof sym + ")<br>");
+    </script>
+</body>
+</html>

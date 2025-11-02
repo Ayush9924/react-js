@@ -1,0 +1,23 @@
+<!-- WAP to implement arrow function which takes 3 integers and returns their average -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average of Three Numbers</title>
+</head>
+<body>
+    <h1>Average of Three Numbers</h1>
+    <p id="demo"></p>
+
+    <script>
+        let a = 10;
+        let b = 15;
+        let c = 2;
+
+        let avg = (a, b, c) => (a + b + c) / 3;
+
+        document.getElementById("demo").innerHTML = "Average: " + avg(a, b, c);
+    </script>
+</body>
+</html>

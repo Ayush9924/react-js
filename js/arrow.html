@@ -1,0 +1,23 @@
+<!-- let myFunction = (a,b) => a*b; -->
+<!-- not hoisted -->
+ <!-- before use they must be define -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>Javascript Function</h1>
+
+    <h2>The arror function</h2>
+    <p> this example shows the synatx of an arrow function and how to use it</p>
+    <p id="demo"></p>
+    <script>
+        let hello=()=>"hello world!";
+        
+        document.getElementById("demo").innerHTML=hello();
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Details</title>
+</head>
+<body>
+  <h1>Employee Details</h1>
+  <p id="output"></p>
+
+  <script>
+    // Creating a class named Employee
+    class Employee {
+      constructor(name, salary, position) {
+        this.name = name;
+        this.salary = salary;
+        this.position = position;
+      }
+
+      // Method to get annual salary
+      getAnnualSalary() {
+        return this.salary * 12;
+      }
+
+      // Method to calculate promotion bonus (10% of annual salary)
+      getPromotion() {
+        return this.getAnnualSalary() * 0.1;
+      }
+
+      // Method to show employee details
+      showDetails() {
+        return `
+          Name: ${this.name} <br>
+          Position: ${this.position} <br>
+          Monthly Salary: ₹${this.salary} <br>
+          Annual Salary: ₹${this.getAnnualSalary()} <br>
+          Promotion Bonus: ₹${this.getPromotion()}
+        `;
+      }
+    }
+
+    // Creating an object of Employee class
+    const emp1 = new Employee("Kumar Ayush", 30000, "Software Developer");
+
+    // Displaying employee details on the web page
+    document.getElementById("output").innerHTML = emp1.showDetails();
+  </script>
+</body>
+</html>

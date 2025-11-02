@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h2>Shopping Cart</h2>
+    <p id="bills"></p>
+
+    <script>
+        const TAX_RATE = 0.08;
+
+        let item1Price = 700;
+        let item2Price = 250;
+        let item3Price = 69;
+
+        let totalPrice = item1Price+item2Price+item3Price;
+
+        let taxAmount = totalPrice*TAX_RATE;
+
+        let finalAmount = totalPrice+taxAmount;
+
+        var message = "Your total billing amount =" + finalAmount.toFixed(2);
+
+        document.getElementById("bills").innerHTML = message;
+    </script>
+</body>
+</html>
